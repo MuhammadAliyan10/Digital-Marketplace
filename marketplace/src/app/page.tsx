@@ -1,6 +1,7 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { ArrowDownToLine, CheckCircle, Leaf, Link } from "lucide-react";
+import { ArrowDownToLine, CheckCircle, Leaf } from "lucide-react";
+import Link from "next/link";
 
 const perks = [
   {
@@ -40,7 +41,9 @@ export default function Home() {
             Browse Trending
           </Link> */}
 
-            <Button> Browse Trending</Button>
+            <Link href="/products" className={buttonVariants()}>
+              Browse Trending
+            </Link>
             <Button variant="ghost">Our quality promise &rarr;</Button>
           </div>
         </div>
