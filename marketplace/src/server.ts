@@ -1,10 +1,16 @@
 import express from "express";
 import { getPayload } from "./getPayload";
 import { nextApp, nextHandler } from "./nextUtils";
+import * as trpcExpress from "@trpc/server/adapters/express";
+import { appRouter } from "./trpc";
 
-// Middleware for handling request body
 const app = express();
 const PORT = Number(process.env.PORT) || 3000;
+
+const createContext = ({
+  req,
+  res,
+}: trpcExpress.CreateExpressContextOptions) => ({ req, res });
 
 const start = async () => {
   const payload = await getPayload({
@@ -15,6 +21,13 @@ const start = async () => {
       },
     },
   });
+  app.use(
+    "/api/trpc",
+    trpcExpress.createExpressMiddleware({
+      router: appRouter,
+      createContext,
+    })
+  );
   app.use((req, res) => {
     nextHandler(req, res);
   });
