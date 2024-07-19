@@ -17,9 +17,7 @@ const Users: CollectionConfig = {
     {
       name: "role",
       defaultValue: "user",
-      admin: {
-        condition: () => false,
-      },
+
       required: true,
       type: "select",
       options: [
