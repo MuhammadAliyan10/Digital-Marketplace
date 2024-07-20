@@ -34,7 +34,7 @@
     "next": "14.2.4",
     "nodemailer": "^6.9.14",
     "nodemon": "^3.1.4",
-    "payload": "^2.23.1",
+    "payload": "^2.24.0",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.52.1",
