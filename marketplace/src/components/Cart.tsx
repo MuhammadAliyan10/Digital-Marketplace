@@ -1,5 +1,5 @@
 "use client";
-import { Loader, ShoppingCart } from "lucide-react";
+import { Loader2, ShoppingCart } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import {
   Sheet,
@@ -43,7 +43,7 @@ const Cart = () => {
           {isMounted ? (
             itemsCount
           ) : (
-            <Loader className="animation-spin h-5 w-5 ml-3" />
+            <Loader2 className="animation-spin h-5 w-5 ml-3 text-muted-foreground" />
           )}
         </span>
       </SheetTrigger>
@@ -80,7 +80,7 @@ const Cart = () => {
               <SheetFooter>
                 <SheetTrigger asChild>
                   <Link
-                    href="/card"
+                    href="/cart"
                     className={buttonVariants({ className: "w-full" })}
                   >
                     Continue to Checkout
