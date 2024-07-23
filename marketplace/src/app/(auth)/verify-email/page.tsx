@@ -6,7 +6,7 @@ interface PageProps {
   searchParams: { [key: string]: string | string[] | undefined };
 }
 
-const page = ({ searchParams }: PageProps) => {
+const Page = ({ searchParams }: PageProps) => {
   const token = searchParams.token;
   const toEmail = searchParams.to;
   return (
@@ -39,4 +39,4 @@ const page = ({ searchParams }: PageProps) => {
   );
 };
 
-export default page;
+export default Page;

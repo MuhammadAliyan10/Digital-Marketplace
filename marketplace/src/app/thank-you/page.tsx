@@ -12,7 +12,7 @@ import PaymentStatus from "@/components/PaymentStatus";
 interface PageProps {
   searchParams: { [key: string]: string | string[] | undefined };
 }
-const page = async ({ searchParams }: PageProps) => {
+const Page = async ({ searchParams }: PageProps) => {
   const orderId = searchParams.orderId;
   const nextCookies = cookies();
   const { user } = await getServerSideUser(nextCookies);
@@ -154,4 +154,4 @@ const page = async ({ searchParams }: PageProps) => {
   );
 };
 
-export default page;
+export default Page;

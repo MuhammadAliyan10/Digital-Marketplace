@@ -48,7 +48,7 @@ export interface Product {
   priceId?: string | null;
   stripeId?: string | null;
   images: {
-    image: string | Media;
+    image: string | Media | { url: string };
     id?: string | null;
   }[];
   updatedAt: string;
