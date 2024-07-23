@@ -41,4 +41,46 @@ export const PRODUCT_CATEGORIES = [
       },
     ],
   },
+  {
+    label: "Cloths",
+    value: "cloths" as const,
+    featured: [
+      {
+        name: "Favorite Cloth Picks",
+        href: "#",
+        imageSrc: "/Nav/Icons/picks.jpg",
+      },
+      {
+        name: "New Cloths",
+        href: "#",
+        imageSrc: "/Nav/Icons/new.jpg",
+      },
+      {
+        name: "Bestselling Cloths",
+        href: "#",
+        imageSrc: "/Nav/Icons/bestsellers.jpg",
+      },
+    ],
+  },
+  {
+    label: "Sports",
+    value: "sports" as const,
+    featured: [
+      {
+        name: "Favorite sports Picks",
+        href: "#",
+        imageSrc: "/Nav/Icons/picks.jpg",
+      },
+      {
+        name: "New Sports items",
+        href: "#",
+        imageSrc: "/Nav/Icons/new.jpg",
+      },
+      {
+        name: "Bestselling Sports",
+        href: "#",
+        imageSrc: "/Nav/Icons/bestsellers.jpg",
+      },
+    ],
+  },
 ];
