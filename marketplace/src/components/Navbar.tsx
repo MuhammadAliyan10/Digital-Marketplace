@@ -2,12 +2,14 @@ import React from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Link from "next/link";
 import { Icons } from "./Icons";
+import logo from "../../public/Logo/logo.png";
 import NavItems from "./NavItems";
 import { buttonVariants } from "./ui/button";
 import Cart from "./Cart";
 import { getServerSideUser } from "@/lib/payload-utils";
 import { cookies } from "next/headers";
 import UserAccountNav from "./UserAccountNav";
+import Image from "next/image";
 
 const Navbar = async () => {
   const nextCookies = cookies();
@@ -21,7 +23,14 @@ const Navbar = async () => {
             <div className="flex h-16 items-center">
               <div className="ml-4 flex lg:ml-0">
                 <Link href="/">
-                  <Icons.logo className="h-10 w-10" />
+                  {/* <Icons.logo className="h-10 w-10" /> */}
+                  <Image
+                    src={logo}
+                    alt="Logo"
+                    width={30}
+                    height={30}
+                    className="h-18 w-18"
+                  />
                 </Link>
               </div>
               <div className="hidden z-50 lg:ml-8 lg:block lg:self-stretch">

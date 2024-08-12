@@ -1,64 +1,43 @@
 export const PRODUCT_CATEGORIES = [
   {
-    label: " UI Kits",
-    value: "ui_kits" as const,
+    label: "Products",
+    value: "products" as const,
     featured: [
       {
-        name: "Editor Picks",
+        name: "Kitchenware",
         href: "#",
-        imageSrc: "/Nav/ui-kits/mixed.jpg",
+        imageSrc: "/Nav/Products/kitchenware.webp",
       },
       {
-        name: "New Arrivals",
+        name: "Cloths",
         href: "#",
-        imageSrc: "/Nav/ui-kits/blue.jpg",
+        imageSrc: "/Nav/Products/cloths.jpg",
       },
       {
-        name: "Best Sellers",
+        name: "Baby Items",
         href: "#",
-        imageSrc: "/Nav/ui-kits/purple.jpg",
+        imageSrc: "/Nav/Products/baby.webp",
       },
     ],
   },
   {
-    label: " Icons",
-    value: "icons" as const,
+    label: "Services",
+    value: "services" as const,
     featured: [
       {
-        name: "Favorite Icons Picks",
+        name: "Web Developer Services",
         href: "#",
-        imageSrc: "/Nav/Icons/picks.jpg",
+        imageSrc: "/Nav/Services/webDeveloper.png",
       },
       {
-        name: "New Arrivals",
+        name: "Web Designer Services",
         href: "#",
-        imageSrc: "/Nav/Icons/new.jpg",
+        imageSrc: "/Nav/Services/webDesign.webp",
       },
       {
-        name: "Bestselling Icons",
+        name: "Programmer Services",
         href: "#",
-        imageSrc: "/Nav/Icons/bestsellers.jpg",
-      },
-    ],
-  },
-  {
-    label: "Cloths",
-    value: "cloths" as const,
-    featured: [
-      {
-        name: "Favorite Cloth Picks",
-        href: "#",
-        imageSrc: "/Nav/Icons/picks.jpg",
-      },
-      {
-        name: "New Cloths",
-        href: "#",
-        imageSrc: "/Nav/Icons/new.jpg",
-      },
-      {
-        name: "Bestselling Cloths",
-        href: "#",
-        imageSrc: "/Nav/Icons/bestsellers.jpg",
+        imageSrc: "/Nav/Services/programming.webp",
       },
     ],
   },
@@ -67,19 +46,19 @@ export const PRODUCT_CATEGORIES = [
     value: "sports" as const,
     featured: [
       {
-        name: "Favorite sports Picks",
+        name: "Shirts",
         href: "#",
-        imageSrc: "/Nav/Icons/picks.jpg",
+        imageSrc: "/Nav/Sports/shirts.webp",
       },
       {
-        name: "New Sports items",
+        name: "Shoes",
         href: "#",
-        imageSrc: "/Nav/Icons/new.jpg",
+        imageSrc: "/Nav/Sports/boots.jpg",
       },
       {
-        name: "Bestselling Sports",
+        name: "Kits",
         href: "#",
-        imageSrc: "/Nav/Icons/bestsellers.jpg",
+        imageSrc: "/Nav/Sports/kits.webp",
       },
     ],
   },

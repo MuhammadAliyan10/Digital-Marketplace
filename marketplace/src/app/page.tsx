@@ -34,14 +34,10 @@ export default function Home() {
             <span className="text-blue-600">digital assets</span>.
           </h1>
           <p className="mt-6 text-lg max-w-prose text-muted-foreground">
-            Welcome to digitalMarketPlace. Every asset on our website is
-            verified by out team to ensure our higher quality standards.
+            Welcome to iStoreHub. Every asset on our website is verified by out
+            team to ensure our higher quality standards.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
-            {/* <Link href="/products" className={buttonVariants()}>
-            Browse Trending
-          </Link> */}
-
             <Link href="/products" className={buttonVariants()}>
               Browse Trending
             </Link>
